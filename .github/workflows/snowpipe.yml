@@ -34,7 +34,7 @@ jobs:
           channel-id: 'C010SJZGLR1'  # Slack channel id to post message
           slack-message: 'Application deployment stopped due to Quality Gate FAIL'
         env:
-          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}}
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
           
       - name: ServiceNow CI/CD Apply Changes
         uses: ServiceNow/sncicd-apply-changes@1.0.0
