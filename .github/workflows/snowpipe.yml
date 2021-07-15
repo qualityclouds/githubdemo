@@ -31,7 +31,7 @@ jobs:
         if: ${{ failure() }}
         uses: slackapi/slack-github-action@v1.14.0
         with:
-          channel-id: 'CHANNEL_ID'  # Slack channel id to post message
+          channel-id: 'C010SJZGLR1'  # Slack channel id to post message
           slack-message: 'QualityClouds CI/CD BuildCheck for Servicenow failed :rocket:'
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
