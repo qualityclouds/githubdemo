@@ -32,7 +32,7 @@ jobs:
         uses: slackapi/slack-github-action@v1.14.0
         with:
           channel-id: 'C010SJZGLR1'  # Slack channel id to post message
-          slack-message: 'QualityClouds CI/CD BuildCheck for Servicenow failed on branch ${{env.GITHUB_REF}} :rocket:'
+          slack-message: 'QualityClouds CI/CD BuildCheck for Servicenow failed on branch ${GITHUB_REF} :rocket:'
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
           
